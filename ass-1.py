@@ -92,4 +92,26 @@ print("Sum is : ", sum(range(1,11)))
 # %% del sum to make sum func work
 del sum
 
-# %%
+# %% print table of 7
+for i in range(1,11):
+    print("7 *", i ,"=", 7*i)
+
+# %% table of 9
+i=1
+while i<=10:
+    print("9 * ",i ,"= ",9*i)
+    i=i+1
+
+# %% pritn table of n given by user
+n=int(input("Enter the no: "))
+i=1
+while i<=10:
+    print(n," * ",i ,"= ",n*i)
+    i=i+1
+
+# %% add all no from 1 to n given by user
+n= int(input("Enter no: "))
+print("Sum: ", sum(range(1,n+1)))
+
+# %% if else
+
