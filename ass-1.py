@@ -188,4 +188,33 @@ def prime(n):
     return 1
 print(prime(20))
 
+# %% add from 1 to n 
+def Addm(n):
+    c= sum(range(1,n+1))
+    return c
+print("sum: ", Addm(10))
+
+# %% sum of all odd nos
+def sodd(n):
+    s=0
+    for i in range (0,n+1):
+        if i%2==1:
+            s=s+i
+    return s
+print("Req sum: ", sodd(8))
+
+# %% add all prime 
+def addp(n):
+    s=0
+    for j in range(2,n+1):
+        f=0
+        for i in range(2,j//2+1):
+            if j%i==0:
+                f=1
+                break
+        if f==0:
+            s=s+j
+    return s
+print("req sum: ", addp(5))
+
 # %% 
