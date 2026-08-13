@@ -114,4 +114,78 @@ n= int(input("Enter no: "))
 print("Sum: ", sum(range(1,n+1)))
 
 # %% if else
+a= int(input("Enter a: "))
+b= int(input("Enter b: "))
+if a>b:
+    print(a)
+else:
+    print(b)
 
+
+# %% no is odd or even
+n= int(input("Enter no: "))
+if n%2==0:
+    print("even")
+else:
+    print("odd")
+
+# %% prime nos
+n= int(input("Enter no: "))
+f=0
+for i in range(2, n//2+1):
+    if n%i ==0:
+        f=1
+        break
+if f==0:
+    print("prime")
+else:
+    print("Composite")
+
+# %% compare strings
+a= input("Enter string a: ")
+b= input("Enter string b: ")
+if a==b:
+    print("a==b")
+elif a>b:
+    print("a")
+else:
+    print("b")
+
+# %% max among 3 nos
+a= int(input("Enter a: "))
+b= int(input("Enter b: "))
+c= int(input("Enter c: "))
+print("Max: ",max(a,b,c))
+
+# %% add all nos divisible by 7 and 9
+n= int(input("Enter no: "))
+s=0
+for i in range(1,n+1):
+    if i%7==0:
+        if i%9==0:
+            s=s+i
+print(s)
+
+# %% add all prime nos from 1 to n
+n= int(input("Enter no: "))
+s=0
+for i in range(1,n+1):
+    for j in range(1,i//2+1):
+        if i%j==0:
+            s=s+i
+print(s)
+# %% func dec
+def Add(a,b):
+    c=a+b
+    return c
+print("Add(10,20)= ",Add(10,20))
+
+# %% prime no func
+def prime(n):
+    for i in range (1, n//2+1):
+        if n%i==0:
+            return 0
+    return 1
+print(prime(20))
+
+# %% 
